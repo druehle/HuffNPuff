@@ -12,28 +12,37 @@
   <body>
     <div id="ui">
       <div class="topbar">
-        <div class="title">Huff n' More Puff</div>
+        <div class="title">Puffing Wolf — Slot</div>
         <div class="stats">
-          <span>Level: <strong id="level">1</strong></span>
-          <span>Time: <strong id="time">10.0</strong>s</span>
-          <span>Target: <strong id="target">—</strong></span>
-          <span>Size: <strong id="size">—</strong></span>
-          <span>Score: <strong id="score">0</strong></span>
+          <span>Balance: <strong id="bal">1000</strong></span>
+          <span>Bet: <strong id="bet">1</strong></span>
+          <span>Win: <strong id="win">0</strong></span>
         </div>
       </div>
     </div>
 
-    <canvas id="game" width="800" height="600"></canvas>
+    <canvas id="game" width="960" height="540" aria-label="Slot reels"></canvas>
+
+    <div class="controls">
+      <button id="betDown" class="btn">−</button>
+      <button id="betUp" class="btn">+</button>
+      <button id="spinBtn" class="btn primary">SPIN</button>
+      <label class="toggle"><input type="checkbox" id="turbo"> Turbo</label>
+    </div>
 
     <div id="overlay" class="overlay show">
       <div class="panel">
-        <h1>Huff n' More Puff</h1>
-        <p class="hint">Alternate keys to puff: <kbd>Z</kbd> then <kbd>X</kbd> (or Left/Right). Tap left/right on mobile.</p>
-        <button id="startBtn" class="btn">Start</button>
+        <h1>Puffing Wolf</h1>
+        <p>Inspired by a popular “house-building” slot. This is an original, non-commercial recreation with simplified math and visuals.</p>
+        <ul class="list">
+          <li>5×3 reels, 25 lines, wilds substitute.</li>
+          <li>6+ hats trigger Respins. Hats stick and upgrade Straw → Wood → Brick.</li>
+          <li>After Respins, each house awards credits. Brick can reveal jackpots.</li>
+        </ul>
+        <button id="startBtn" class="btn">Play</button>
       </div>
     </div>
 
     <script src="game.js"></script>
   </body>
   </html>
-

@@ -45,14 +45,22 @@ body {
 .stats span strong { color: var(--accent); }
 
 #game {
-  width: min(100vw, 1000px);
-  height: calc(min(100vw, 1000px) * 0.75);
-  max-height: calc(100vh - 64px);
+  width: min(100vw, 1100px);
+  height: calc(min(100vw, 1100px) * 0.5625);
+  max-height: calc(100vh - 140px);
   align-self: center;
   justify-self: center;
   border-radius: 12px;
   background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
   box-shadow: 0 10px 25px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-self: center;
+  justify-self: center;
+  margin: 10px 0 24px;
 }
 
 .overlay {
@@ -83,6 +91,8 @@ body {
 
 .panel h1 { margin-top: 0; }
 .panel p { opacity: 0.9; }
+.panel .list { text-align: left; opacity: 0.9; }
+.panel .list li { margin: 6px 0; }
 
 .btn {
   margin-top: 8px;
@@ -96,6 +106,7 @@ body {
   box-shadow: 0 4px 0 #d39a00;
 }
 .btn:active { transform: translateY(1px); box-shadow: 0 3px 0 #d39a00; }
+.btn.primary { background: linear-gradient(180deg, var(--accent3), #04c690); box-shadow: 0 4px 0 #039a78; }
 
 kbd {
   background: rgba(255,255,255,0.12);
@@ -105,3 +116,4 @@ kbd {
   padding: 1px 6px;
 }
 
+.toggle { user-select: none; display: flex; align-items: center; gap: 8px; }
