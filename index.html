@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Huff n' More Puff — HTML5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <div class="topbar">
+        <div class="title">Huff n' More Puff</div>
+        <div class="stats">
+          <span>Level: <strong id="level">1</strong></span>
+          <span>Time: <strong id="time">10.0</strong>s</span>
+          <span>Target: <strong id="target">—</strong></span>
+          <span>Size: <strong id="size">—</strong></span>
+          <span>Score: <strong id="score">0</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="game" width="800" height="600"></canvas>
+
+    <div id="overlay" class="overlay show">
+      <div class="panel">
+        <h1>Huff n' More Puff</h1>
+        <p class="hint">Alternate keys to puff: <kbd>Z</kbd> then <kbd>X</kbd> (or Left/Right). Tap left/right on mobile.</p>
+        <button id="startBtn" class="btn">Start</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+  </html>
+
